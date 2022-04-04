@@ -39,9 +39,27 @@
       </div>
 
       <ul class="thumb">
-        <li><img src="./assets/images/thumb1.png" alt="Coffee thumbnail" /></li>
-        <li><img src="./assets/images/thumb2.png" alt="Coffee thumbnail" /></li>
-        <li><img src="./assets/images/thumb3.png" alt="Coffee thumbnail" /></li>
+        <li>
+          <img
+            src="./assets/images/thumb1.png"
+            alt="Coffee thumbnail"
+            onclick="imgSelector('./assets/images/img1.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/images/thumb2.png"
+            alt="Coffee thumbnail"
+            onclick="imgSelector('./assets/images/img2.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/images/thumb3.png"
+            alt="Coffee thumbnail"
+            onclick="imgSelector('./assets/images/img3.png')"
+          />
+        </li>
       </ul>
 
       <ul class="sci">
@@ -62,5 +80,11 @@
         </li>
       </ul>
     </section>
+
+    <script text="text/javascript">
+      function imgSelector(img) {
+        document.querySelector(".starbucks").src = img;
+      }
+    </script>
   </body>
 </html>
