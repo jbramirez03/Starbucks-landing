@@ -43,21 +43,21 @@
           <img
             src="./assets/images/thumb1.png"
             alt="Coffee thumbnail"
-            onclick="imgSelector('./assets/images/img1.png')"
+            onclick="imgSelector('./assets/images/img1.png'); circleColor('#017143');"
           />
         </li>
         <li>
           <img
             src="./assets/images/thumb2.png"
             alt="Coffee thumbnail"
-            onclick="imgSelector('./assets/images/img2.png')"
+            onclick="imgSelector('./assets/images/img2.png'); circleColor('#eb7495');"
           />
         </li>
         <li>
           <img
             src="./assets/images/thumb3.png"
             alt="Coffee thumbnail"
-            onclick="imgSelector('./assets/images/img3.png')"
+            onclick="imgSelector('./assets/images/img3.png'); circleColor('#d752b1');"
           />
         </li>
       </ul>
@@ -84,6 +84,11 @@
     <script text="text/javascript">
       function imgSelector(img) {
         document.querySelector(".starbucks").src = img;
+      }
+
+      function circleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
       }
     </script>
   </body>
