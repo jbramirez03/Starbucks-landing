@@ -193,6 +193,20 @@ header ul li a {
     background-repeat: no-repeat;
   }
 
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+
   section {
     padding: 20px 20px 120px;
   }
