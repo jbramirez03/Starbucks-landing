@@ -197,6 +197,10 @@ header ul li a {
     justify-content: center;
   }
 
+  .content .imgBox img {
+    max-width: 250px;
+  }
+
   .circle {
     clip-path: circle(400px at center bottom);
   }
