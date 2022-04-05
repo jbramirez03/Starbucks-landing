@@ -184,9 +184,12 @@ header ul li a {
     background-position: center;
     background-repeat: no-repeat;
     filter: invert(1);
+    z-index: 11;
   }
 
   .toggle.active {
+    position: fixed;
+    right: 20px;
     background: url("../images/close.png");
     background-size: 25px;
     background-position: center;
