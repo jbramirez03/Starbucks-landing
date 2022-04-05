@@ -210,6 +210,11 @@ header ul li a {
     z-index: 10;
   }
 
+  header ul li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+
   section {
     padding: 20px 20px 120px;
   }
